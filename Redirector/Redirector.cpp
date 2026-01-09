@@ -271,6 +271,15 @@ extern "C" {
 			nf_addRule(&rule, FALSE);
 		}
 
+		/* ipv6 */
+		{
+			memset(&rule, 0, sizeof(NF_RULE));
+			rule.ip_family = AF_INET6;
+			rule.filteringFlag = NF_ALLOW;
+			nf_addRule(&rule, FALSE);
+		}
+
+
 		if (filterICMP)
 		{
 			nf_setIPEventHandler(&IPEventHandler);

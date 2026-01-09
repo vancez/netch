@@ -1,2 +1,2 @@
 # NatTypeTester
-NatTypeTester.exe
+NatTypeTester(-[^\\]+)?\.exe
